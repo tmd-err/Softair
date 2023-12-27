@@ -1,0 +1,204 @@
+*{
+  outline: none;
+ }
+body{
+    background: linear-gradient(#101820 2%, #3AAFA9,#2b7a78);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.form-container {
+    width: 19rem;
+    position: relative;
+    bottom: 90px;
+    margin: 0 auto;
+    padding: 1.7rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 4px 9px 5px rgba(0, 0, 0, 0.082);
+}
+label,.welcome,h2,button{
+    color: white;
+}
+img{
+   position: relative;
+   top: -100px;
+   width: 10rem;
+   margin:20px;
+   border-radius: 50%;
+   
+
+}
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 10px 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+    
+}
+input:focus{
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.288);
+}
+textarea {
+    height: 100px;
+}
+textarea:focus{
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.288);
+}
+
+button{
+    
+    background-color:#101820 ;
+    border-radius: .5rem;
+    padding: 10px 20px;
+    border-radius: .5rem;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    margin: auto auto;
+    border: none;transition: .3s;
+    
+}
+button:hover{
+    color: #2b7a78;
+    background-color: white;
+    scale: .9;
+}
+.welcome{
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-left: 28%;
+    letter-spacing: 1px;
+    width: 45%;
+    text-align: center;
+    position: relative;
+    top: 70px;
+}
+
+
+h2{
+    text-decoration: underline;
+}
+@media screen and (max-width:768px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .logosa{
+        width: 30%;
+        display: block;
+        position: relative;
+        top: 1.5rem;
+
+    }
+    
+   .welcome{
+        font-size:19px;
+        box-shadow: 1px 1px 10px inset #ffff;
+        margin:-2rem auto 4rem;
+        padding: 5px;
+        border-radius: 1rem;
+    }
+    
+    button{
+        width: 50%;
+        height: 45px;
+        align-items: center;
+        text-align: right;
+        display: flex;margin-top: 1rem;
+        justify-content: center;
+    }
+    .form-container h2{
+        font-size: 30px;
+    }
+    .form-container{
+        width: 65% ;
+        height: 55vh;
+        margin-top: 8rem;
+    }
+}
+@media screen and (min-width:400px) and(max-width:768px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .logosa{
+        width: 30%;
+        display: block;
+        position: relative;
+        top: 1.5rem;
+
+    }
+    
+   .welcome{
+        font-size:40px;
+        box-shadow: 1px 1px 10px inset #ffff;
+        margin:-2rem auto 10rem;
+        width: 60%;
+        padding: 5px;
+        border-radius: 1rem;
+    }
+    label{
+        font-size: 40px;margin-bottom: 1rem;
+    }
+    button{
+        width: 50%;
+        height: 4rem;
+        align-items: center;
+        text-align: right;
+        margin-top: 4rem;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    input[type="text"],
+input[type="email"],
+textarea {
+    width: 60%;
+    padding: 1.5rem;
+    display: block;
+    gap: 2rem;
+    font-size: 25px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+    
+}
+.contact{
+    font-size: 60px;
+}
+    .form-container{
+        width: 70% ;
+        height: auto;
+        margin-top: 8rem;
+    }
+
+}

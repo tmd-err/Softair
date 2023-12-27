@@ -1,0 +1,640 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+
+}
+body{
+  background: linear-gradient(#101820 2%, #3AAFA9,#2b7a78);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.header{
+  width: 100%;
+}
+.logosa{
+   
+    width: 10rem;
+    margin: .7rem 0px 10px 2rem;
+    border-radius: 50%;
+    
+
+
+}
+
+.navbar{
+    display: inline;
+    
+    
+}
+.navb{
+    font-size: 20px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid transparent;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.navb:hover{
+    
+    
+    box-shadow: 2px 2px 10px 2px #ffffff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 45%;
+    align-items: center;
+    margin-top:1.5rem;float: right;
+    
+}
+.slider-nav a {
+  font-size: 60px; 
+  margin: 0 5px;  
+  color: #fff;    
+  
+}
+.slider-nav{
+  display: flex;gap: 20px;
+}
+
+.welcome{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    line-height: 2;
+    margin:3rem 0 0 28%;
+    letter-spacing: 1px;
+    width: 40%;
+    text-align: center;
+    border-radius: .5rem;
+    border: solid 1px rgb(255, 255, 255);
+}
+.welcome,.offerofthemonth{
+  color: white;
+}
+
+.slider-wrap{
+    position: relative;
+    max-width: 80%;
+    margin: 90px auto;
+}
+.slider{
+    border-radius: 1rem;
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+.slider img{
+    flex-shrink: 0;
+    width: 100%;
+    animation:slider 10s infinite ease-in-out;
+    object-fit: cover;
+}
+
+    .slider-nav {
+      position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        
+    }
+    .slider-nav a{
+        border-radius: 50%;
+        height: 5px;
+        color: rgba(255, 255, 255, 0.253);
+        width: 5px;
+    }
+    .slider-nav a:hover{
+        color: rgba(0, 0, 0, 0.178);
+    }
+    
+
+
+@keyframes slider{
+    0%,
+    20%{
+        transform: translateX(0);
+    }
+    25%,
+    45%{
+        transform: translateX(-100%);
+    }
+    50%,
+    70%{
+        transform: translateX(-200%);
+
+    }
+    75%,
+    90%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-400%);
+        
+    }
+    
+}
+
+marquee{
+    font-size: 50px;color: white;
+    margin:5rem 0 2rem 0;
+    
+}.card {
+    width: 270px;
+    height: 440px;
+    background-image: linear-gradient(163deg, #00a18c 0%, #fc00ff 100%);
+    border-radius: 20px;
+    transition: all .2s;
+   }
+   
+   .card2 {
+    width: 270px;
+    height: 420px;padding-bottom: 20px;
+    background-color: #17252A;
+    transition: all .2s;
+    
+
+   }
+   .card{
+    margin: 0 auto;
+    gap: 10%;
+   }
+   
+   .card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+
+   }
+   .card:hover {
+    box-shadow: 0px 0px 30px 5px rgba(0, 255, 117, 0.30);
+   }
+   .card :hover img{
+    border-radius: 20px 20px 0 0;
+   }
+   .text{
+    color: white;
+    margin: 20px;
+    
+   }
+   .text,.card p{
+    font-variant: small-caps;
+   }
+   
+   .text h3{
+color: #3AAFA9;
+margin:0 0 10px 10px;
+letter-spacing: 2px;
+   }
+   .GridAll{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;margin: 10% auto;
+    gap: 7rem;
+    
+   }
+   .card button{
+    width: 40%;
+    height: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    margin-top: 1.5rem;
+    position: relative;
+    left: 30%;
+    display: block;
+    background-color: white;
+
+   }
+   .card button:hover{
+    background-color: #2B7A78;
+    color: #ffffff;
+
+   }
+   .price{
+    text-align: end;
+    left: 70%;
+    top: 5px;
+    margin: 5px 10px;
+   }
+   .rating {
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .rating label:before {
+    content: '\2605';
+    font-size: 30px;
+  }
+  
+  .rating input:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #FFD700;
+    transition: color 0.3s;
+  }
+  .rating,.card p{
+    margin: -15px 0 5px 20px;
+  }
+  .MiniGal{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin:6rem auto;justify-content: left;
+    gap: 20px;
+
+
+  }
+  .MiniGal div{
+    width: 200px;
+    height: 27rem;
+    background-color: #165a68;
+    color: white;
+    padding: 1rem;
+    transition: .7s;
+    border-radius: 1rem 0 1rem 0;
+    margin: 0 auto;
+  }
+  .MiniGal p,h3{
+    margin: 20px;
+  }
+  .MiniGal h3{
+    color: #F2D8D8;
+    text-align: center;
+    font-size: 18px;
+  }
+  .MiniGal p{
+    font-size: 18px;
+  }
+  .MiniGal #del,b{
+    float: right;
+  }
+  .MiniGal .Explore,.Reserve{
+    width: 30%;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    top: 20%;
+    padding: 5px;
+    transition: .2s;
+
+  }
+  .Explore{
+    background-color: #2B7A78;
+    color: white;
+  }
+  .Reserve{
+    color: #2B7A78;
+    background-color: white;
+  }
+  .MiniGal button:hover{
+    scale:.9 ;
+  }
+  .MiniGal div:hover{
+    scale:1.1 ;
+    box-shadow: 3px 3px 10px black;
+
+  }
+  .offerofthemonth{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto 0;
+    padding: 30px 30px;
+  }
+   .header{
+    width: 100%;
+    background-color: #101820;
+    height: 6rem;
+   }
+   .article-img img{
+    border-radius: .4rem;
+    width: 33%;
+    justify-content: center;
+    margin: 0 auto;
+    transition: .3s;
+   }
+   .article-img img:hover{
+    scale: .9;
+
+   }
+  
+   #TOP,.Choosingus{
+    width: 25%;margin: 0 auto;
+    text-transform: uppercase;
+    padding: 20px 20px; 
+    margin-bottom: 2rem;
+    font-size: 23px;
+    border:1px solid white ;
+    border-radius: 1rem;
+    text-align: center;
+    color: white;
+   }
+   
+   .article-container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.article-section {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.text3{
+    float: left;
+    width: 45%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: #17252A;
+    color: white;
+    border-radius: .3rem;
+    font-size: 20px;
+    margin: auto 0;
+     
+}
+.article-para{
+  text-align: justify;
+  line-height: 1.6em;
+  
+
+
+}
+.text3 {
+  padding: 30px;
+
+}
+.image {
+    float: right;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: .7rem;
+}
+
+.article-section:nth-child(even) .text3 {
+    float: right;
+}
+
+.article-section:nth-child(even) .image {
+    float: left;
+}
+footer {
+font-size: 20px;
+background-color: #333;
+width: 100%;
+color: #fff;
+padding: 20px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+
+}
+.map {
+flex: 1;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+gap: 1.5rem;
+
+}
+
+
+.login {
+flex: 1;
+text-align: center;
+}
+
+.contact {
+  flex: 1;
+  text-align: center;
+}
+.footInput {
+padding: 5px;
+margin: 5px;
+}
+
+.map a{
+  text-decoration: none;
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+.map a:hover{
+  background: linear-gradient(120deg,white,#2B7A78);
+  background-clip: text;
+  color: transparent;
+}
+.social-media {
+margin-top: 10px;
+}
+
+.social-media img {
+width: 20px;
+margin-right: 5px;transition: .5s;
+}
+.social-media img:hover{
+scale: 1.1;
+}
+.social-media img{
+  border-radius: 1rem;
+  display: inline-flex;
+  margin: 0 20px;
+  justify-content: space-between;
+  width: 4rem;
+}
+.vertical-line{
+height: 24rem;
+margin: 0 2rem;
+border: solid 1px gray;
+}
+footer{
+  width: 97.4%;
+}
+footer p{
+  margin-bottom: 3rem;
+  color: #ffff;
+}
+.hr1{
+  position: relative;top: 15px;
+  left: 15%;
+}
+footer hr{
+  width: 30%;
+}
+.hr2{
+  position: relative;
+  left: 55%;
+  top:-3.67rem;
+}
+@media screen and (max-width:768px){
+  .welcome,#TOP,.Choosingus{
+    font-size: 16px;
+    width: 50%;
+    margin: 20px auto;
+  }
+  .logosa{
+    width: 30%;
+  }
+  
+  .navbar{
+    display: flex;
+    gap: 25px;
+    background-color:white;
+    border-radius: 1rem 0 1rem 1rem;
+    margin: 50px auto;
+    text-align: center;
+    padding: 10px;
+    flex-direction:column;
+    flex-wrap: wrap;
+  }
+  
+  .navb{
+    background-color: transparent;
+  }
+  .header{
+    height: 100px;
+    width: 100%;
+  }
+  .slider-wrap{
+    max-width: 95%;
+  }
+  marquee{
+    font-size: 25px;
+    margin: 100px 0 10px 0;
+
+  }
+  .offerofthemonth{
+    font-size: 16px;
+
+  }
+  .article-para{
+    font-size: 12px;
+    height: 150px;
+    padding: 0;
+    overflow: auto;
+
+  }
+  .article-section{
+    margin-bottom: 10px;
+  }
+  .card2{
+    height: 380px;width:95%;
+    padding: 10px;
+    flex: 1;
+    border-radius: 1rem;
+    
+  }
+  .card{
+    margin: 0 auto;
+    width: 100%;
+  }
+  .card img{
+    border-radius: 1rem;
+  }
+  .article-container{
+    width: 95%;
+  }
+  .card:hover  img{
+    border-radius: inherit;
+
+  }
+  .card2:hover {
+    transform: inherit;
+    border-radius: inherit;
+
+   }
+   .text3{
+    padding: 5px;
+
+   }
+   .displayNone{
+    display: none;
+   }
+   .card:hover {
+    box-shadow: inherit;
+   }
+  .card{
+    background-image: inherit;
+  }
+   .image img{
+    height:150px ;
+    display: flex;
+    justify-items: center;
+  }
+  .menuImg{
+    float: right;
+    position: relative;
+    width: 20px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .MiniGal div{
+    height: 28rem;
+    padding: 5px;
+    border-radius: 1rem;
+    width: 100%;
+
+  }
+  .MiniGal p{
+    margin: 0;text-align: center;
+  }
+  .MiniGal img{
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .MiniGal{
+    margin: 3rem auto;
+  }
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .map{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+  }
+  .vertical-line{
+    display: none;
+  }
+  .localisation{
+    width: 100%;
+  }
+  footer div{
+    margin: 2rem 0;
+  }
+  .GridAll button{
+    height: 30px;
+    color: white;
+    background-color: #165a68;
+  }
+  
+}

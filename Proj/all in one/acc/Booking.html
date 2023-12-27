@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelBooking  |</title>
+  <link rel="stylesheet" href="../fontStyle.css">
+
+  <style>
+    body{
+  background: linear-gradient(#101820 2%, #3AAFA9,#2b7a78);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.logosa{
+    width: 10rem;
+    margin: 20px;
+    border-radius: 7em;
+    
+}
+    .Book{
+    width: 80%;
+    background-color: transparent;
+    margin: 60px auto;padding: 20px;
+    height: 190px;
+    border: 2px solid #ffff;
+    border-radius: 1rem;
+    margin-bottom: 30px;
+    font-size: 19px;
+   } 
+   .booking{
+    text-align: center;
+    color: white;
+   }
+   .travel-class{
+    display: inline;
+
+   }
+   .Book .destination,.form-group,.date{
+    display: inline;
+    margin: 3%;
+   }
+   .Book input,select{
+    height: 23px;
+    outline: none;
+    border: none;
+    padding: 4px;
+    font-variant: small-caps;
+   }
+   .Book input[type="text"]:focus{
+    box-shadow: 2px 2px 4px  black;
+   }
+   .Book h2,label{
+    color: white;}
+   .Book select,option{
+    background-color: white;
+    width: 180px;
+    height: 32px;
+   }
+   .Book .SubButt input[type="submit"]{
+    width: 10%;border: none;
+    background-color: #15515d;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    cursor: pointer;
+    height: 5%;
+    margin-top: 3rem;
+    border-radius:.7rem;
+    font-size: 15px;
+    transition: .3s;
+
+    
+   }
+   .SubButt{
+    display: flex;justify-content: center;
+    margin-top: 5px;
+   }
+   .date{
+    height: 50px;
+    width: 120px;
+   }
+   .Book .SubButt input[type="submit"]:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    scale: .9;
+   }
+   .trip{
+    line-height: .9;
+   }
+   .input-svg{
+    background-image: url(location-plus-regular-24.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20px;
+   }
+  </style>
+</head>
+<body><header><img class="logosa" src="./logoowhite.png" alt="Not found"></header>
+  
+  <div class="Book">
+    <h2 style="text-align: center">Travel Booking</h2>
+    <div class="travel-type">
+      <label for="trip-type">Trip Type:</label><br>
+      <input style="margin-left: 20px;" type="radio" id="round-trip" name="trip-type" checked>
+      <label for="round-trip">Round Trip</label>
+      <input type="radio" id="one-way" name="trip-type">
+      <label for="one-way">One Way</label>
+    </div><br>
+    <div>
+      <div class="destination">
+        <input class="input-svg" type="text" placeholder="Departure city" required></div>
+      <div class="destination" >  <input class="input-svg"  type="text" placeholder="Destination" required>
+      </div><div class="date"><input type="date" placeholder="Date of Departure"></div>
+      <div class="form-group">
+        <select  class="same" id="travel-class">
+          <option value="" disabled selected>Class & Travelers:</option>
+          <option value="economy">Economy</option>
+          <option value="business">Business</option>
+          <option value="first-class">First Class</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input required type="number" id="number-of-guests" placeholder="Number of Travelers"  min="0">
+      </div>
+      <div class="SubButt"><input class="SubButt" type="submit" value="submit"></div>
+  </div>
+  
+
+
+</body>
+</html>
